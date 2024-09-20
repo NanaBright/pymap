@@ -8,29 +8,43 @@ import time
 # Initialize geolocator
 geolocator = Nominatim(user_agent="ghana_route_map")
 
-# Towns in order with numbering
-towns = [
-    "Juaso Ashanti", "Konongo", "Agogo", "Kumawu", "Effiduase Ashanti", "Juaben", "Ejisu", 
-    "Asokore Mampong", "Tafo", "Aboaso Ashanti", "Agona", "Mampong", "Nsuta", 
-    "Drabonso", "Ejura", "Sakyedumase", "Kyekyewere  Ashanti", "Nkwanta Kese", "Suame", 
-    "Berekese", "Ofinso Ashanti", "Akumadan", "Techimantia", "Tepa", "Wioso", 
-    "Mankranso", "Nkawie", "Nyinahin", "Manso Nkwanta", "Manso Adubia", 
-    "Kwadaso", "Kotwi", "Bekwai", "Jacobo", "Asokwa", "Asonkore", "Obuasi", 
-    "Amankyim", "Fomena", "New Edubiase Ashanti", "Nsuaem Ashanti", "Pramso", "Asokwa", 
-    "Bantama", "Kejetia", "Adum"
-]
-
-
 # Create a map centered at Airport Residential in Accra
 accra_coords = geolocator.geocode("Airport Residential, Accra, Ghana")
 mymap = folium.Map(location=[accra_coords.latitude, accra_coords.longitude], zoom_start=8)
 
-# Function to get coordinates of towns with delay
+# List of towns
+towns = [
+    "Juaso Ashanti", "Konongo", "Agogo", "Kumawu", "Effiduase Ashanti", "Juaben", "Ejisu", 
+    "Asokore Mampong", "Tafo", "Aboaso Ashanti", "Agona", "Mampong", "Nsuta", 
+    "Drabonso Ashanti", "Ejura", "Sakyedumase Ashanti", "Kyekyewere  Ashanti", "Nkwanta Kese", "Suame", 
+    "Berekese", "Ofinso Ashanti", "Akumadan", "Techimantia", "Tepa", "Wioso", 
+    "Mankranso", "Nkawie", "Nyinahin", "Manso Nkwanta", "Manso Adubia", 
+    "Kwadaso", "Kotwi", "Bekwai", "Jacobu", "Asonkore", "Obuasi", 
+    "Amankyim", "Fomena", "New Edubiase Ashanti", "Nsuaem Ashanti", "Pramso", "Asokwa", 
+    "Bantama", "Kejetia", "Adum"
+]
+
+# Predefined coordinates for specific towns (if known)
+town_coords = {
+    "Drabonso Ashanti": (7.0640574407227374, -1.1225477187122912),
+    "Sakyedumase Ashanti": (7.311350827898801, -1.5764203984103713),
+    "Nkwanta Kese": (6.858037982900508, -1.6799975695541458),
+    "Ofinso Ashanti": (7.047656158990458, -1.7160881962705348),
+    "Amankyim": (6.118493816136714, -1.66567356674061),
+    "Jacobu": (6.350240773632263, -1.6753198681445953),
+    
+    # Add more town coordinates here if you have them
+}
+
+# Function to get coordinates of towns with delay (to prevent API rate limit)
 def get_coordinates(town):
-    location = geolocator.geocode(town + ", Ghana")
-    time.sleep(1)  # Delay to prevent rate limiting
-    if location:
-        return location.latitude, location.longitude
+    if town in town_coords:  # Use predefined coordinates if available
+        return town_coords[town]
+    else:
+        location = geolocator.geocode(town + ", Ghana")
+        time.sleep(1)  # Delay to prevent rate limiting
+        if location:
+            return location.latitude, location.longitude
     return None
 
 # Plot the route on the map with numbered pins
@@ -58,11 +72,11 @@ options.add_argument("--headless")
 driver = webdriver.Chrome(options=options)
 
 # Load the map and take a screenshot
-driver.get("file://" + "/path/to/map-py.html")  # Ensure correct file path
+driver.get("file://" + "/path/to/kumasi-route.html")  # Ensure correct file path
 driver.set_window_size(800, 600)
 driver.save_screenshot("kumasi-route.png")
 
-# Close the browser'
+# Close the browser
 driver.quit()
 
 # Display the generated map image using matplotlib
