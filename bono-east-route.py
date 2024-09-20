@@ -9,7 +9,11 @@ import time
 geolocator = Nominatim(user_agent="ghana_route_map")
 
 # Towns in order with numbering
-towns = ["Kukuom", "Goaso", "Hwidiem", "Kenyasi", "Bechem", "Duayaw Nkwanta"]
+towns = [
+    "Sampa", "Menji", "Wenchi", "Akrofrom", "Hansua", "Nkoranza", 
+    "Droma", "Atebubu", "Kwame Danso", "Kajaji", "Yeji", "Dama Nkwanta", 
+    "Apesika", "Kitampo"
+]
 
 
 
@@ -42,7 +46,7 @@ for idx, town in enumerate(towns, 1):
 folium.PolyLine(locations=route, color="blue", weight=2.5, opacity=1).add_to(mymap)
 
 # Save the map as an HTML file
-mymap.save("ahafo-route.html")
+mymap.save("bono-east-route.html")
 
 # Use selenium to render the HTML as an image (with headless mode)
 options = Options()
@@ -50,15 +54,15 @@ options.add_argument("--headless")
 driver = webdriver.Chrome(options=options)
 
 # Load the map and take a screenshot
-driver.get("file://" + "/path/to/ahafo-route.html")  # Ensure correct file path
+driver.get("file://" + "/path/to/bono-east-route.html")  # Ensure correct file path
 driver.set_window_size(800, 600)
-driver.save_screenshot("ahafo-route.png")
+driver.save_screenshot("bono-east-route.png")
 
 # Close the browser'
 driver.quit()
 
 # Display the generated map image using matplotlib
-img = plt.imread("ahafo-route.png")
+img = plt.imread("bono-east-route.png")
 plt.imshow(img)
 plt.axis('off')  # Hide axes
 plt.show()

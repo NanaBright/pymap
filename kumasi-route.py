@@ -10,13 +10,13 @@ geolocator = Nominatim(user_agent="ghana_route_map")
 
 # Towns in order with numbering
 towns = [
-    "Juaso", "Konongo", "Agogo", "Kumawu", "Effiduase", "Juaben", "Ejisu", 
-    "Asokore Mampong", "Tafo", "Aboaso", "Agona", "Mampong", "Nsuta", 
-    "Drabonso", "Ejura", "Sakyedumase", "Kyekyewere", "Nkwanta Kese", "Suame", 
-    "Berekese", "Ofinso", "Akumadan", "Techimantia", "Tepa", "Wioso", 
+    "Juaso Ashanti", "Konongo", "Agogo", "Kumawu", "Effiduase Ashanti", "Juaben", "Ejisu", 
+    "Asokore Mampong", "Tafo", "Aboaso Ashanti", "Agona", "Mampong", "Nsuta", 
+    "Drabonso", "Ejura", "Sakyedumase", "Kyekyewere  Ashanti", "Nkwanta Kese", "Suame", 
+    "Berekese", "Ofinso Ashanti", "Akumadan", "Techimantia", "Tepa", "Wioso", 
     "Mankranso", "Nkawie", "Nyinahin", "Manso Nkwanta", "Manso Adubia", 
     "Kwadaso", "Kotwi", "Bekwai", "Jacobo", "Asokwa", "Asonkore", "Obuasi", 
-    "Amankyim", "Fomena", "New Edubiase", "Nsuaem", "Pramso", "Asokwa", 
+    "Amankyim", "Fomena", "New Edubiase Ashanti", "Nsuaem Ashanti", "Pramso", "Asokwa", 
     "Bantama", "Kejetia", "Adum"
 ]
 
