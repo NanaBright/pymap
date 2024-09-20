@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_825cef4e167587c7205789cb9d85e061 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_825cef4e167587c7205789cb9d85e061" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_825cef4e167587c7205789cb9d85e061 = L.map(
+                "map_825cef4e167587c7205789cb9d85e061",
+                {
+                    center: [5.6132499, -0.1832656],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_26de9deeb117fb08bd41c552a5cd3622 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_26de9deeb117fb08bd41c552a5cd3622.addTo(map_825cef4e167587c7205789cb9d85e061);
+        
+    
+            var marker_afe5d0e6af69e222f9b8674c581b8ebf = L.marker(
+                [8.7894174, -1.4682039],
+                {}
+            ).addTo(map_825cef4e167587c7205789cb9d85e061);
+        
+    
+            var div_icon_23f8cbaea5d0e72b5c4e22232484e0b5 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; font-weight: bold;\"\u003e1\u003c/div\u003e"});
+            marker_afe5d0e6af69e222f9b8674c581b8ebf.setIcon(div_icon_23f8cbaea5d0e72b5c4e22232484e0b5);
+        
+    
+        var popup_7c08d92b194a5c43dfd5e30acaedcf05 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a2e661bfa913512f6925828f0bac2a5 = $(`<div id="html_4a2e661bfa913512f6925828f0bac2a5" style="width: 100.0%; height: 100.0%;">Town 1: Buipe</div>`)[0];
+                popup_7c08d92b194a5c43dfd5e30acaedcf05.setContent(html_4a2e661bfa913512f6925828f0bac2a5);
+            
+        
+
+        marker_afe5d0e6af69e222f9b8674c581b8ebf.bindPopup(popup_7c08d92b194a5c43dfd5e30acaedcf05)
+        ;
+
+        
+    
+    
+            var marker_1a0a62aa033cec76a46e015e33d38d7f = L.marker(
+                [9.5302819, -1.3836878],
+                {}
+            ).addTo(map_825cef4e167587c7205789cb9d85e061);
+        
+    
+            var div_icon_986b6bad14cbe8c7127379ecd4563bde = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; font-weight: bold;\"\u003e2\u003c/div\u003e"});
+            marker_1a0a62aa033cec76a46e015e33d38d7f.setIcon(div_icon_986b6bad14cbe8c7127379ecd4563bde);
+        
+    
+        var popup_c5eaceab5f4fe65c342363b1d4dcbd3c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb3b150439f591e53c2939d0805d8cd8 = $(`<div id="html_cb3b150439f591e53c2939d0805d8cd8" style="width: 100.0%; height: 100.0%;">Town 2: Daboya</div>`)[0];
+                popup_c5eaceab5f4fe65c342363b1d4dcbd3c.setContent(html_cb3b150439f591e53c2939d0805d8cd8);
+            
+        
+
+        marker_1a0a62aa033cec76a46e015e33d38d7f.bindPopup(popup_c5eaceab5f4fe65c342363b1d4dcbd3c)
+        ;
+
+        
+    
+    
+            var marker_08e19e4c763418c6a147c8bbd9e2d9a0 = L.marker(
+                [9.0850647, -1.8200755],
+                {}
+            ).addTo(map_825cef4e167587c7205789cb9d85e061);
+        
+    
+            var div_icon_5e29b6adaaa94738af2edece28bb9edc = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; font-weight: bold;\"\u003e3\u003c/div\u003e"});
+            marker_08e19e4c763418c6a147c8bbd9e2d9a0.setIcon(div_icon_5e29b6adaaa94738af2edece28bb9edc);
+        
+    
+        var popup_61761f06c3c234de30559f21db25b933 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aadec58cf8e53a0cb9c1df38aa8e03c9 = $(`<div id="html_aadec58cf8e53a0cb9c1df38aa8e03c9" style="width: 100.0%; height: 100.0%;">Town 3: Damongo</div>`)[0];
+                popup_61761f06c3c234de30559f21db25b933.setContent(html_aadec58cf8e53a0cb9c1df38aa8e03c9);
+            
+        
+
+        marker_08e19e4c763418c6a147c8bbd9e2d9a0.bindPopup(popup_61761f06c3c234de30559f21db25b933)
+        ;
+
+        
+    
+    
+            var marker_e9d1d5a93e7708152f5039a8df396649 = L.marker(
+                [9.2727455, -2.4139258],
+                {}
+            ).addTo(map_825cef4e167587c7205789cb9d85e061);
+        
+    
+            var div_icon_cc7387398b72f6659988f49a416e53bb = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; font-weight: bold;\"\u003e4\u003c/div\u003e"});
+            marker_e9d1d5a93e7708152f5039a8df396649.setIcon(div_icon_cc7387398b72f6659988f49a416e53bb);
+        
+    
+        var popup_99ce80d3abda05b3304f1cf6de955e2e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cecd1bc4528a85dc8b79cf54789a3941 = $(`<div id="html_cecd1bc4528a85dc8b79cf54789a3941" style="width: 100.0%; height: 100.0%;">Town 4: Sawla</div>`)[0];
+                popup_99ce80d3abda05b3304f1cf6de955e2e.setContent(html_cecd1bc4528a85dc8b79cf54789a3941);
+            
+        
+
+        marker_e9d1d5a93e7708152f5039a8df396649.bindPopup(popup_99ce80d3abda05b3304f1cf6de955e2e)
+        ;
+
+        
+    
+    
+            var marker_7acd06bd2e9a6ebb7e5466c8d693c095 = L.marker(
+                [9.0324846, -2.4895105],
+                {}
+            ).addTo(map_825cef4e167587c7205789cb9d85e061);
+        
+    
+            var div_icon_72e45e9300d29fb1c0c6b9ee196cbc60 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; font-weight: bold;\"\u003e5\u003c/div\u003e"});
+            marker_7acd06bd2e9a6ebb7e5466c8d693c095.setIcon(div_icon_72e45e9300d29fb1c0c6b9ee196cbc60);
+        
+    
+        var popup_4507999d7e13875ad18adf3e609b491b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3759bf742bb2d04ec1b58b0934829983 = $(`<div id="html_3759bf742bb2d04ec1b58b0934829983" style="width: 100.0%; height: 100.0%;">Town 5: Bole</div>`)[0];
+                popup_4507999d7e13875ad18adf3e609b491b.setContent(html_3759bf742bb2d04ec1b58b0934829983);
+            
+        
+
+        marker_7acd06bd2e9a6ebb7e5466c8d693c095.bindPopup(popup_4507999d7e13875ad18adf3e609b491b)
+        ;
+
+        
+    
+    
+            var poly_line_47a0a59315406860b5c9ef3c36d503b4 = L.polyline(
+                [[8.7894174, -1.4682039], [9.5302819, -1.3836878], [9.0850647, -1.8200755], [9.2727455, -2.4139258], [9.0324846, -2.4895105]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_825cef4e167587c7205789cb9d85e061);
+        
+</script>
+</html>
