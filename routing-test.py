@@ -10,12 +10,40 @@ geolocator = Nominatim(user_agent="ghana_route_map")
 
 # Towns in order with numbering
 towns = [
-    "Achimota Mall", "Pokuase", "Oduman", "Nsawam", "Aburi", "Akropong", "Adukrom",
-    "Somanya", "Krobodumase", "Atimpoku", "Asesewa", "Begoro", "Oseim", "New Tafo Akim",
+    "Dome Kwabenya", "Trobu", "Amasaman", "Nsawam", "Aburi", "Akropong", "Adukrom", 
+    "Somanya", "Krobo Odumasi", "Atimpoku", "Asesewa", "Begoro", "Oseim", "New Tafo Akyem", 
     "Koforidua", "Suhum", "Teacher Mante", "Adeiso", "Asamankese", "Akwatia", 
-    "Kade", "New Abirem", "Ofoase Ayirebi", "Akim Oda", "Akim Swedru", "Achiase", 
-    "Asene-Manso-Akroso", "Osino", "Kwabeng", "Anyinam", "Nkawkaw", "Abetifi", 
-    "Mpraeso", "Maame Krobo", "Donkorkrom"
+    "Kade", "New Abirem", "Ofoase", "Akim Oda", "Akim Swedru", "Akyase", 
+    "Akroso", "Osino", "Anyinam", "Kwabeng", "Nkawkaw", "Abetefi", 
+    "Mpraeso", "Adowso", "Ekyiamenfrom", "Mame Krobo", "Donkorkrom", 
+    "Juaso", "Konongo", "Agogo", "Kumawu", "Effiduase", "Juaben", 
+    "Ejisu", "Asokore Mampong", "Tafo", "Aboaso", "Agona", "Mampong", 
+    "Nsuta", "Drabonso", "Ejura", "Sakyedumase", "Kyekyewere", "Nkwanta Kese",
+    "Suame", "Berekese", "Ofinso", "Akumadan", "Techimantia", "Tepa", "Wioso",
+    "Mankranso", "Nkawie", "Nyinahin", "Manso Nkwanta", "Manso Adubia", "Kwadaso", 
+    "Kotwi", "Bekwai", "Jacobo", "Asokwa", "Asonkore", "Obuasi", "Amankyim", "Fomena", 
+    "New Edubiase", "Nsuaem", "Pramso", "Asokwa", "Bantama", "Kejetia", "Adum", "Kukuom", 
+    "Goaso", "Hwidiem", "Kenyasi", "Bechem", "Duayaw Nkwanta", "Sunyani", "Nsuatre", "Berekum",
+    "Senase", 
+    "Jinijini", "Wamufie", "Dormaa Ahenkro", "Drobo", "Sampa", "Menji", "Wenchi", "Akrofrom", 
+    "Hansua", "Nkoranza", "Droma", "Atebubu", "Kwame Danso", "Kajaji", "Yeji", "Dama Nkwanta", 
+    "Apesika", "Kintampo", "Buipe", "Daboya", "Damongo", "Sawla", "Bole", "Wa", "Dorimon", "Kundungu", 
+    "Nadowli", "Lawra", "Nandom", "Hamile", "Jirapa", "Busie", "Gwolu", "Navrongo", 
+    "Paga", "Bolgatanga", "Bongo", "Kongo", "Zebilla", "Bawku", "Pusiga", "Binduri", "Garu", 
+    "Tempane", "Tongo", "Sandema", "Fumbisi", "Yagaba", "Walewale", "Nalerigu", "Nakpanduri", 
+    "Bunkpurugu", "Chereponi", "Saboba", "Yendi", "Zabzugu", "Tatale", "Gushiegu", "Karaga", 
+    "Savelugu", "Tamale", "Kumbungu", "Tolon", "Sang", "Lepusi", "Bimbila", "Salaga", "Wulensi", 
+    "Kpandai", "Kindeyri", "Kete Krachi", "Dambai", "Nkwanta", "Domanko", "Abrubruwa", "Kadjebi",
+    "Jasikan", "Kwamikrom", "Hohoe", "Golokwati", "Kpando", "Vakpo", "Have Etoe", "Kpeve", 
+    "Logba Alakpeti", "Dzolo Gbogame", "Ho", "Agotime Kpetoe", "Waya", "Mafi Kumase Proper", 
+    "Ziope", "Ave Dakpa", "Dzodze", "Tadzevu", "Akatsi", "Aflao", "Anloga", "Sogakope", "Kasseh", 
+    "Prampram", "Tema", "Tema West Municipal", "Accra", "Kasoa", "Senya Bereku", "Winneba", 
+    "Agona Swedru", "Awutu Breku", "Nsaba", "Bobikuma", "Ajumako", "Brakwa", "Mankessim", 
+    "Cape Coast", "Abura Dunkwa", "Assin Manso", "Foso", "Npanchiraso", "Twifo Praso",
+    "Kyekyewere", "Dunkwa On Offin", "Wawase", "Komenda", "Shama Junction", "Esamang", "Sekondi", 
+    "Adietem", "Takoradi", "Agona", "Axim", "Nkroful", "Elubo", "Tarkwa", "Prestea", "Nkonya", 
+    "Manso Amenfi", "Asankragua", "Achimfo", "Dadieso", "Juaboso", "Debiso", "Wiawso", "Bibiani", 
+    "Kumasi"
 ]
 
 # Create a map centered at Airport Residential in Accra
