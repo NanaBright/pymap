@@ -8,25 +8,32 @@ import time
 # Initialize geolocator
 geolocator = Nominatim(user_agent="ghana_route_map")
 
-# Towns in order with numbering
-towns = [
-    "Sampa", "Menji", "Wenchi", "Akrofrom", "Hansua", "Nkoranza", 
-    "Droma", "Atebubu", "Kwame Danso", "Kajaji", "Yeji", "Dama Nkwanta", 
-    "Apesika", "Kitampo"
-]
-
-
-
 # Create a map centered at Airport Residential in Accra
 accra_coords = geolocator.geocode("Airport Residential, Accra, Ghana")
 mymap = folium.Map(location=[accra_coords.latitude, accra_coords.longitude], zoom_start=8)
 
-# Function to get coordinates of towns with delay
+# Towns in order with numbering
+towns = [
+    "Sampa", "Menji", "Wenchi", "Akrofrom Bono", "Hansua", "Nkoranza", 
+    "Droma", "Atebubu", "Kwame Danso", "Kajaji", "Yeji", "Dama Nkwanta", 
+    "Apesika Bono", "Kintampo"
+]
+
+town_coords = {
+    "Hansua": (7.555504512317282, -1.9370584757425051),
+    "Droma": (7.711764830091014, -1.5574628767870842),
+    # Add more town coordinates here if you have them
+}
+
+
 def get_coordinates(town):
-    location = geolocator.geocode(town + ", Ghana")
-    time.sleep(1)  # Delay to prevent rate limiting
-    if location:
-        return location.latitude, location.longitude
+    if town in town_coords:  # Use predefined coordinates if available
+        return town_coords[town]
+    else:
+        location = geolocator.geocode(town + ", Ghana")
+        time.sleep(1)  # Delay to prevent rate limiting
+        if location:
+            return location.latitude, location.longitude
     return None
 
 # Plot the route on the map with numbered pins
@@ -58,7 +65,7 @@ driver.get("file://" + "/path/to/bono-east-route.html")  # Ensure correct file p
 driver.set_window_size(800, 600)
 driver.save_screenshot("bono-east-route.png")
 
-# Close the browser'
+# Close the browser
 driver.quit()
 
 # Display the generated map image using matplotlib
