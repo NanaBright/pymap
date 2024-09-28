@@ -1,50 +1,49 @@
 Ghana Regional Route Maps
 
 This project provides interactive route maps for different regions of Ghana. The maps are generated using Python with the help of Folium, Geopy, and Selenium, and show a visual route connecting various towns in each region. Each town is marked with a numbered pin, and the route is displayed as a polyline.
-Features
 
-    Interactive maps showing routes across towns in each region.
-    Numbered markers indicating the order of towns along the route.
-    Customizable routes with predefined coordinates for known towns.
-    Automatically generated images of the maps using Selenium for easy sharing.
+Features:
 
-Regions Covered
+1. Interactive maps showing routes across towns in each region.
+2. Numbered markers indicating the order of towns along the route.
+3. Customizable routes with predefined coordinates for known towns.
+4. Automatically generated images of the maps using Selenium for easy sharing.
 
-    Ahafo
-    Ashanti
-    Bono
-    Bono-East
-    Eastern
-    Savannah
-    More regions can easily be added.
+Regions Covered:
 
-Technologies Used
+1. Ahafo
+2. Ashanti
+3. Bono
+4. Bono-East
+5. Eastern
+6. Savannah
+More regions can easily be added
 
-    Folium – for map visualization.
-    Geopy – for geocoding towns (converting town names to coordinates).
-    Selenium – for rendering and taking screenshots of the maps.
-    Matplotlib – for displaying the final map images.
+Technologies Used:
 
-Installation
+1. Folium – for map visualization.
+2. Geopy – for geocoding towns (converting town names to coordinates).
+3. Selenium – for rendering and taking screenshots of the maps.
+4. Matplotlib – for displaying the final map images.
+
+Installation:
 
     Clone the repository:
 
     bash
-
-git clone https://github.com/yourusername/pymap.git
-cd pymap
+    
+    git clone https://github.com/yourusername/regional-route-maps.git
+    
+    cd regional-route-maps
 
 Install the required dependencies:
 
 You can install the required Python packages by running:
 
-bash
-
-pip install -r requirements.txt
+    
+    pip install -r requirements.txt
 
 Alternatively, you can manually install them:
-
-bash
 
     pip install folium geopy selenium matplotlib
 
@@ -52,11 +51,9 @@ bash
 
     Ensure you have the appropriate WebDriver for your browser (e.g., ChromeDriver for Chrome). Download it from here and add it to your system's PATH.
 
-Usage
+Usage:
 
     Run the script for a specific region:
-
-    bash
 
     python ashanti_route.py
 
@@ -70,7 +67,7 @@ Usage
 
     The script also generates a PNG image of the map using Selenium. This image can be found in the project directory and is named according to the region.
 
-Customization
+Customization:
 
     Adding new towns or regions:
 
@@ -80,7 +77,7 @@ Customization
 
     You can customize the map’s initial zoom level and center by adjusting the parameters passed to folium.Map() in the script.
 
-Contributing
+Contributing:
 
 Feel free to submit issues or pull requests if you have suggestions for improvements or would like to contribute additional regions!
 License
