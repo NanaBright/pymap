@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0124fc5a4e80efd7da827a952ec3e331 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0124fc5a4e80efd7da827a952ec3e331" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0124fc5a4e80efd7da827a952ec3e331 = L.map(
+                "map_0124fc5a4e80efd7da827a952ec3e331",
+                {
+                    center: [5.6132499, -0.1832656],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1f82da9a92ed5be5a45c66d4a4312f4d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_1f82da9a92ed5be5a45c66d4a4312f4d.addTo(map_0124fc5a4e80efd7da827a952ec3e331);
+        
+    
+            var marker_8255f516b0af631af3aeac16b7405972 = L.marker(
+                [10.2323816, -1.2835894],
+                {}
+            ).addTo(map_0124fc5a4e80efd7da827a952ec3e331);
+        
+    
+            var div_icon_d42eac5dc6077b9b1dadfe0f917e293a = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; font-weight: bold;\"\u003e1\u003c/div\u003e"});
+            marker_8255f516b0af631af3aeac16b7405972.setIcon(div_icon_d42eac5dc6077b9b1dadfe0f917e293a);
+        
+    
+        var popup_7387cca04798a4a2c68dcbe738264669 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f297ea2fc9eb71ad8479ff7f921e8a69 = $(`<div id="html_f297ea2fc9eb71ad8479ff7f921e8a69" style="width: 100.0%; height: 100.0%;">Town 1: Yagaba</div>`)[0];
+                popup_7387cca04798a4a2c68dcbe738264669.setContent(html_f297ea2fc9eb71ad8479ff7f921e8a69);
+            
+        
+
+        marker_8255f516b0af631af3aeac16b7405972.bindPopup(popup_7387cca04798a4a2c68dcbe738264669)
+        ;
+
+        
+    
+    
+            var marker_62378edf1dfc9cd4c56698e70d90fd67 = L.marker(
+                [10.347691, -0.802274],
+                {}
+            ).addTo(map_0124fc5a4e80efd7da827a952ec3e331);
+        
+    
+            var div_icon_4cd196cae472afc06606deebbe36275d = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; font-weight: bold;\"\u003e2\u003c/div\u003e"});
+            marker_62378edf1dfc9cd4c56698e70d90fd67.setIcon(div_icon_4cd196cae472afc06606deebbe36275d);
+        
+    
+        var popup_0006bc892145b202c05dc1c88a84cb92 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5125b00a0c7632701ceca9009a2594e7 = $(`<div id="html_5125b00a0c7632701ceca9009a2594e7" style="width: 100.0%; height: 100.0%;">Town 2: Walewale</div>`)[0];
+                popup_0006bc892145b202c05dc1c88a84cb92.setContent(html_5125b00a0c7632701ceca9009a2594e7);
+            
+        
+
+        marker_62378edf1dfc9cd4c56698e70d90fd67.bindPopup(popup_0006bc892145b202c05dc1c88a84cb92)
+        ;
+
+        
+    
+    
+            var marker_d9485a2b3fbbbe20b5e1a43f307b979e = L.marker(
+                [10.525509, -0.370179],
+                {}
+            ).addTo(map_0124fc5a4e80efd7da827a952ec3e331);
+        
+    
+            var div_icon_d519feb2caf5df4ea551b3f6d81468ab = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; font-weight: bold;\"\u003e3\u003c/div\u003e"});
+            marker_d9485a2b3fbbbe20b5e1a43f307b979e.setIcon(div_icon_d519feb2caf5df4ea551b3f6d81468ab);
+        
+    
+        var popup_91011d2accbd5f09f8399da78b9a4485 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5f39b24c169cda3010da4eb195993a2 = $(`<div id="html_c5f39b24c169cda3010da4eb195993a2" style="width: 100.0%; height: 100.0%;">Town 3: Nalerigu</div>`)[0];
+                popup_91011d2accbd5f09f8399da78b9a4485.setContent(html_c5f39b24c169cda3010da4eb195993a2);
+            
+        
+
+        marker_d9485a2b3fbbbe20b5e1a43f307b979e.bindPopup(popup_91011d2accbd5f09f8399da78b9a4485)
+        ;
+
+        
+    
+    
+            var marker_3f8c8909705027bd5d2934d27a75e2e9 = L.marker(
+                [10.632198, -0.180118],
+                {}
+            ).addTo(map_0124fc5a4e80efd7da827a952ec3e331);
+        
+    
+            var div_icon_eef05ecba411d1e5e744d1e53c6c765d = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; font-weight: bold;\"\u003e4\u003c/div\u003e"});
+            marker_3f8c8909705027bd5d2934d27a75e2e9.setIcon(div_icon_eef05ecba411d1e5e744d1e53c6c765d);
+        
+    
+        var popup_6de513abc6018bcceea90078342fc698 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8db2c521d431ce4c2719506ea79954a = $(`<div id="html_f8db2c521d431ce4c2719506ea79954a" style="width: 100.0%; height: 100.0%;">Town 4: Nakpanduri</div>`)[0];
+                popup_6de513abc6018bcceea90078342fc698.setContent(html_f8db2c521d431ce4c2719506ea79954a);
+            
+        
+
+        marker_3f8c8909705027bd5d2934d27a75e2e9.bindPopup(popup_6de513abc6018bcceea90078342fc698)
+        ;
+
+        
+    
+    
+            var marker_7b06efc151530aab762baa3cc4e3fc41 = L.marker(
+                [10.518794, 0.0963092],
+                {}
+            ).addTo(map_0124fc5a4e80efd7da827a952ec3e331);
+        
+    
+            var div_icon_bb9b7252ebcccd5ed499458af2796f43 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; font-weight: bold;\"\u003e5\u003c/div\u003e"});
+            marker_7b06efc151530aab762baa3cc4e3fc41.setIcon(div_icon_bb9b7252ebcccd5ed499458af2796f43);
+        
+    
+        var popup_cb60dff9583249dc2f4daed613a9e723 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3a4073b2981287538f30ae842c21a923 = $(`<div id="html_3a4073b2981287538f30ae842c21a923" style="width: 100.0%; height: 100.0%;">Town 5: Bunkpurugu</div>`)[0];
+                popup_cb60dff9583249dc2f4daed613a9e723.setContent(html_3a4073b2981287538f30ae842c21a923);
+            
+        
+
+        marker_7b06efc151530aab762baa3cc4e3fc41.bindPopup(popup_cb60dff9583249dc2f4daed613a9e723)
+        ;
+
+        
+    
+    
+            var marker_e67b1f69b7d3c323dabf78b9867bd813 = L.marker(
+                [10.137547, 0.2910324],
+                {}
+            ).addTo(map_0124fc5a4e80efd7da827a952ec3e331);
+        
+    
+            var div_icon_0ea79e2d61aac6fb408f51d026a4c2da = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; font-weight: bold;\"\u003e6\u003c/div\u003e"});
+            marker_e67b1f69b7d3c323dabf78b9867bd813.setIcon(div_icon_0ea79e2d61aac6fb408f51d026a4c2da);
+        
+    
+        var popup_82f7c4223abae4ddbc8ef03a4806fe50 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd0fbc57ec0cc06700bbd67b5d5ec3b0 = $(`<div id="html_bd0fbc57ec0cc06700bbd67b5d5ec3b0" style="width: 100.0%; height: 100.0%;">Town 6: Chereponi</div>`)[0];
+                popup_82f7c4223abae4ddbc8ef03a4806fe50.setContent(html_bd0fbc57ec0cc06700bbd67b5d5ec3b0);
+            
+        
+
+        marker_e67b1f69b7d3c323dabf78b9867bd813.bindPopup(popup_82f7c4223abae4ddbc8ef03a4806fe50)
+        ;
+
+        
+    
+    
+            var poly_line_7fdbe504911534de919c197001d160c0 = L.polyline(
+                [[10.2323816, -1.2835894], [10.347691, -0.802274], [10.525509, -0.370179], [10.632198, -0.180118], [10.518794, 0.0963092], [10.137547, 0.2910324]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_0124fc5a4e80efd7da827a952ec3e331);
+        
+</script>
+</html>
