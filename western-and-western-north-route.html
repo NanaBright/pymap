@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_505101e3cbb1e99751a0dc91d004f91d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_505101e3cbb1e99751a0dc91d004f91d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_505101e3cbb1e99751a0dc91d004f91d = L.map(
+                "map_505101e3cbb1e99751a0dc91d004f91d",
+                {
+                    center: [5.6132499, -0.1832656],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_88d96de7831cb4365158c318d793f652 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_88d96de7831cb4365158c318d793f652.addTo(map_505101e3cbb1e99751a0dc91d004f91d);
+        
+    
+            var marker_a468af381cabac30b94c498c09c3da6f = L.marker(
+                [5.018978, -1.6652796],
+                {}
+            ).addTo(map_505101e3cbb1e99751a0dc91d004f91d);
+        
+    
+            var div_icon_00269802a4c0f7342a8b64b9ea644905 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; font-weight: bold;\"\u003e1\u003c/div\u003e"});
+            marker_a468af381cabac30b94c498c09c3da6f.setIcon(div_icon_00269802a4c0f7342a8b64b9ea644905);
+        
+    
+        var popup_c383b1be50464624eee7d5001cf2baf5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ef111ac7191ee3119f5f2994506d7fb = $(`<div id="html_0ef111ac7191ee3119f5f2994506d7fb" style="width: 100.0%; height: 100.0%;">Town 1: Shama Junction</div>`)[0];
+                popup_c383b1be50464624eee7d5001cf2baf5.setContent(html_0ef111ac7191ee3119f5f2994506d7fb);
+            
+        
+
+        marker_a468af381cabac30b94c498c09c3da6f.bindPopup(popup_c383b1be50464624eee7d5001cf2baf5)
+        ;
+
+        
+    
+    
+            var marker_504a2ea44bc025991f6af52be007b4e9 = L.marker(
+                [5.352208174617949, -1.6780302960023483],
+                {}
+            ).addTo(map_505101e3cbb1e99751a0dc91d004f91d);
+        
+    
+            var div_icon_16ad6ed70f4aed50f265820e5e07ba7b = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; font-weight: bold;\"\u003e2\u003c/div\u003e"});
+            marker_504a2ea44bc025991f6af52be007b4e9.setIcon(div_icon_16ad6ed70f4aed50f265820e5e07ba7b);
+        
+    
+        var popup_12f1d736b0cdb89d5a0ef3f26c4afcea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bae58307a4b11774df380f33b5aac931 = $(`<div id="html_bae58307a4b11774df380f33b5aac931" style="width: 100.0%; height: 100.0%;">Town 2: Esamang</div>`)[0];
+                popup_12f1d736b0cdb89d5a0ef3f26c4afcea.setContent(html_bae58307a4b11774df380f33b5aac931);
+            
+        
+
+        marker_504a2ea44bc025991f6af52be007b4e9.bindPopup(popup_12f1d736b0cdb89d5a0ef3f26c4afcea)
+        ;
+
+        
+    
+    
+            var marker_36a6bd4c21ec33649abafa6ee22388dc = L.marker(
+                [4.937, -1.7127928],
+                {}
+            ).addTo(map_505101e3cbb1e99751a0dc91d004f91d);
+        
+    
+            var div_icon_dec269721b505817ca842e4783482e9f = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; font-weight: bold;\"\u003e3\u003c/div\u003e"});
+            marker_36a6bd4c21ec33649abafa6ee22388dc.setIcon(div_icon_dec269721b505817ca842e4783482e9f);
+        
+    
+        var popup_edb03d0237add8b3f827d00630713836 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a0b44b8185b90b65ac0bf5151f55c37 = $(`<div id="html_5a0b44b8185b90b65ac0bf5151f55c37" style="width: 100.0%; height: 100.0%;">Town 3: Sekondi</div>`)[0];
+                popup_edb03d0237add8b3f827d00630713836.setContent(html_5a0b44b8185b90b65ac0bf5151f55c37);
+            
+        
+
+        marker_36a6bd4c21ec33649abafa6ee22388dc.bindPopup(popup_edb03d0237add8b3f827d00630713836)
+        ;
+
+        
+    
+    
+            var marker_4a5c7f42ac8564ba35dc98896086171c = L.marker(
+                [4.931695677549553, -1.7883252878051414],
+                {}
+            ).addTo(map_505101e3cbb1e99751a0dc91d004f91d);
+        
+    
+            var div_icon_5bcd456e302bcfa1a7a04ac13666313c = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; font-weight: bold;\"\u003e4\u003c/div\u003e"});
+            marker_4a5c7f42ac8564ba35dc98896086171c.setIcon(div_icon_5bcd456e302bcfa1a7a04ac13666313c);
+        
+    
+        var popup_62afa75a2fcc067c441878a3a1d8be6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_27432cee06fcf889bb7a6d7d978cc590 = $(`<div id="html_27432cee06fcf889bb7a6d7d978cc590" style="width: 100.0%; height: 100.0%;">Town 4: Adietem</div>`)[0];
+                popup_62afa75a2fcc067c441878a3a1d8be6e.setContent(html_27432cee06fcf889bb7a6d7d978cc590);
+            
+        
+
+        marker_4a5c7f42ac8564ba35dc98896086171c.bindPopup(popup_62afa75a2fcc067c441878a3a1d8be6e)
+        ;
+
+        
+    
+    
+            var marker_722269745175716b2cfd3a149d202dd2 = L.marker(
+                [4.887401, -1.7519316],
+                {}
+            ).addTo(map_505101e3cbb1e99751a0dc91d004f91d);
+        
+    
+            var div_icon_4ef71f8b9d1874c8559d850f38c4d1c5 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; font-weight: bold;\"\u003e5\u003c/div\u003e"});
+            marker_722269745175716b2cfd3a149d202dd2.setIcon(div_icon_4ef71f8b9d1874c8559d850f38c4d1c5);
+        
+    
+        var popup_506cc1da68a4d39170b080d3b914db16 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f95ea7861e18e360889d7b74e0af14f1 = $(`<div id="html_f95ea7861e18e360889d7b74e0af14f1" style="width: 100.0%; height: 100.0%;">Town 5: Takoradi</div>`)[0];
+                popup_506cc1da68a4d39170b080d3b914db16.setContent(html_f95ea7861e18e360889d7b74e0af14f1);
+            
+        
+
+        marker_722269745175716b2cfd3a149d202dd2.bindPopup(popup_506cc1da68a4d39170b080d3b914db16)
+        ;
+
+        
+    
+    
+            var marker_d40b66538a3ac7920d621e60fda6a17e = L.marker(
+                [4.8901537, -1.9664135],
+                {}
+            ).addTo(map_505101e3cbb1e99751a0dc91d004f91d);
+        
+    
+            var div_icon_179af7b30237012e09a5324f22569016 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; font-weight: bold;\"\u003e6\u003c/div\u003e"});
+            marker_d40b66538a3ac7920d621e60fda6a17e.setIcon(div_icon_179af7b30237012e09a5324f22569016);
+        
+    
+        var popup_f7117f7944effe86fde87bc9a8e9fb3b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c60cbb0860c0b00232dd83d294c8896 = $(`<div id="html_7c60cbb0860c0b00232dd83d294c8896" style="width: 100.0%; height: 100.0%;">Town 6: Agona Western</div>`)[0];
+                popup_f7117f7944effe86fde87bc9a8e9fb3b.setContent(html_7c60cbb0860c0b00232dd83d294c8896);
+            
+        
+
+        marker_d40b66538a3ac7920d621e60fda6a17e.bindPopup(popup_f7117f7944effe86fde87bc9a8e9fb3b)
+        ;
+
+        
+    
+    
+            var marker_fe2a87ef5e83c4fc804d28f37b9e5b9d = L.marker(
+                [4.865362, -2.242169],
+                {}
+            ).addTo(map_505101e3cbb1e99751a0dc91d004f91d);
+        
+    
+            var div_icon_0e3a37ea9b902a50063768226362db38 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; font-weight: bold;\"\u003e7\u003c/div\u003e"});
+            marker_fe2a87ef5e83c4fc804d28f37b9e5b9d.setIcon(div_icon_0e3a37ea9b902a50063768226362db38);
+        
+    
+        var popup_98661734bf489079261587ae3353cee6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6d336045f83fd7c309f0497abeee120 = $(`<div id="html_b6d336045f83fd7c309f0497abeee120" style="width: 100.0%; height: 100.0%;">Town 7: Axim</div>`)[0];
+                popup_98661734bf489079261587ae3353cee6.setContent(html_b6d336045f83fd7c309f0497abeee120);
+            
+        
+
+        marker_fe2a87ef5e83c4fc804d28f37b9e5b9d.bindPopup(popup_98661734bf489079261587ae3353cee6)
+        ;
+
+        
+    
+    
+            var marker_d325dfd48fb0cb1550942454fa2e1388 = L.marker(
+                [4.967695, -2.322883],
+                {}
+            ).addTo(map_505101e3cbb1e99751a0dc91d004f91d);
+        
+    
+            var div_icon_26158fbe8730bb06771f59d7ed8faa4f = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; font-weight: bold;\"\u003e8\u003c/div\u003e"});
+            marker_d325dfd48fb0cb1550942454fa2e1388.setIcon(div_icon_26158fbe8730bb06771f59d7ed8faa4f);
+        
+    
+        var popup_e0c79f886564730140e02b155eb23e75 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40aca9b3929fb204cf90c41a5b3294be = $(`<div id="html_40aca9b3929fb204cf90c41a5b3294be" style="width: 100.0%; height: 100.0%;">Town 8: Nkroful</div>`)[0];
+                popup_e0c79f886564730140e02b155eb23e75.setContent(html_40aca9b3929fb204cf90c41a5b3294be);
+            
+        
+
+        marker_d325dfd48fb0cb1550942454fa2e1388.bindPopup(popup_e0c79f886564730140e02b155eb23e75)
+        ;
+
+        
+    
+    
+            var marker_8d32afd6e0c9b35393f80c5664a88f82 = L.marker(
+                [5.288944, -2.772551],
+                {}
+            ).addTo(map_505101e3cbb1e99751a0dc91d004f91d);
+        
+    
+            var div_icon_6f8818db54f72ed03711847f8bd9e781 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; font-weight: bold;\"\u003e9\u003c/div\u003e"});
+            marker_8d32afd6e0c9b35393f80c5664a88f82.setIcon(div_icon_6f8818db54f72ed03711847f8bd9e781);
+        
+    
+        var popup_e432d6ad1f5a412a506841f43177f303 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_373ca4d8258290bf518d4e17649e17d6 = $(`<div id="html_373ca4d8258290bf518d4e17649e17d6" style="width: 100.0%; height: 100.0%;">Town 9: Elubo</div>`)[0];
+                popup_e432d6ad1f5a412a506841f43177f303.setContent(html_373ca4d8258290bf518d4e17649e17d6);
+            
+        
+
+        marker_8d32afd6e0c9b35393f80c5664a88f82.bindPopup(popup_e432d6ad1f5a412a506841f43177f303)
+        ;
+
+        
+    
+    
+            var marker_0228a5a189ed35ed4f02bf2a45838054 = L.marker(
+                [5.310935, -1.992426],
+                {}
+            ).addTo(map_505101e3cbb1e99751a0dc91d004f91d);
+        
+    
+            var div_icon_9079b4715ca2ae2c226e5fb562aa6634 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; font-weight: bold;\"\u003e10\u003c/div\u003e"});
+            marker_0228a5a189ed35ed4f02bf2a45838054.setIcon(div_icon_9079b4715ca2ae2c226e5fb562aa6634);
+        
+    
+        var popup_e9cd2984ef92bb8ba773569304196a73 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff7342298a462bf9f98399038be38aae = $(`<div id="html_ff7342298a462bf9f98399038be38aae" style="width: 100.0%; height: 100.0%;">Town 10: Tarkwa</div>`)[0];
+                popup_e9cd2984ef92bb8ba773569304196a73.setContent(html_ff7342298a462bf9f98399038be38aae);
+            
+        
+
+        marker_0228a5a189ed35ed4f02bf2a45838054.bindPopup(popup_e9cd2984ef92bb8ba773569304196a73)
+        ;
+
+        
+    
+    
+            var marker_540961141b547859213fd3894417734a = L.marker(
+                [5.4336458, -2.1423648],
+                {}
+            ).addTo(map_505101e3cbb1e99751a0dc91d004f91d);
+        
+    
+            var div_icon_2c8a9006090d29ac18cf2e6ed61e389e = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; font-weight: bold;\"\u003e11\u003c/div\u003e"});
+            marker_540961141b547859213fd3894417734a.setIcon(div_icon_2c8a9006090d29ac18cf2e6ed61e389e);
+        
+    
+        var popup_251322c11eff4476d57513c3cdcadd07 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8652c83085a71bb15d978470c730c710 = $(`<div id="html_8652c83085a71bb15d978470c730c710" style="width: 100.0%; height: 100.0%;">Town 11: Prestea</div>`)[0];
+                popup_251322c11eff4476d57513c3cdcadd07.setContent(html_8652c83085a71bb15d978470c730c710);
+            
+        
+
+        marker_540961141b547859213fd3894417734a.bindPopup(popup_251322c11eff4476d57513c3cdcadd07)
+        ;
+
+        
+    
+    
+            var marker_e7bdb1268ede238ae4a36cf384723aae = L.marker(
+                [5.6337881, -2.2483906],
+                {}
+            ).addTo(map_505101e3cbb1e99751a0dc91d004f91d);
+        
+    
+            var div_icon_4655d59c605b1fc225f958c2a18c2f90 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; font-weight: bold;\"\u003e12\u003c/div\u003e"});
+            marker_e7bdb1268ede238ae4a36cf384723aae.setIcon(div_icon_4655d59c605b1fc225f958c2a18c2f90);
+        
+    
+        var popup_2d6007822aa2de8b0328d9518055b95d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a10cf378fc1d68bf8f63f6bdc0866e94 = $(`<div id="html_a10cf378fc1d68bf8f63f6bdc0866e94" style="width: 100.0%; height: 100.0%;">Town 12: Manso Amenfi</div>`)[0];
+                popup_2d6007822aa2de8b0328d9518055b95d.setContent(html_a10cf378fc1d68bf8f63f6bdc0866e94);
+            
+        
+
+        marker_e7bdb1268ede238ae4a36cf384723aae.bindPopup(popup_2d6007822aa2de8b0328d9518055b95d)
+        ;
+
+        
+    
+    
+            var marker_08dfbef6366a67ed2b85339165319393 = L.marker(
+                [6.282859, -2.6237662],
+                {}
+            ).addTo(map_505101e3cbb1e99751a0dc91d004f91d);
+        
+    
+            var div_icon_eeedadb4b660208155bfb2b381f3ba35 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; font-weight: bold;\"\u003e13\u003c/div\u003e"});
+            marker_08dfbef6366a67ed2b85339165319393.setIcon(div_icon_eeedadb4b660208155bfb2b381f3ba35);
+        
+    
+        var popup_247bd1422fb70525457d4e5ecfd66cdf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d42757e2bd5aaaa1df416eab9ab2de0 = $(`<div id="html_8d42757e2bd5aaaa1df416eab9ab2de0" style="width: 100.0%; height: 100.0%;">Town 13: Nkonya</div>`)[0];
+                popup_247bd1422fb70525457d4e5ecfd66cdf.setContent(html_8d42757e2bd5aaaa1df416eab9ab2de0);
+            
+        
+
+        marker_08dfbef6366a67ed2b85339165319393.bindPopup(popup_247bd1422fb70525457d4e5ecfd66cdf)
+        ;
+
+        
+    
+    
+            var marker_01059841541c76a8cd856b0d9a0e13df = L.marker(
+                [5.805803, -2.4324189],
+                {}
+            ).addTo(map_505101e3cbb1e99751a0dc91d004f91d);
+        
+    
+            var div_icon_bf5d1a00a1727996a07ad9deddd621a9 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; font-weight: bold;\"\u003e14\u003c/div\u003e"});
+            marker_01059841541c76a8cd856b0d9a0e13df.setIcon(div_icon_bf5d1a00a1727996a07ad9deddd621a9);
+        
+    
+        var popup_cf86cc6c892d00013ab3bf6bf34feb63 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e5ce596319bc053a90d384aac617edd1 = $(`<div id="html_e5ce596319bc053a90d384aac617edd1" style="width: 100.0%; height: 100.0%;">Town 14: Asankragwa</div>`)[0];
+                popup_cf86cc6c892d00013ab3bf6bf34feb63.setContent(html_e5ce596319bc053a90d384aac617edd1);
+            
+        
+
+        marker_01059841541c76a8cd856b0d9a0e13df.bindPopup(popup_cf86cc6c892d00013ab3bf6bf34feb63)
+        ;
+
+        
+    
+    
+            var marker_702be9c3f08948c64696a2acea09dc03 = L.marker(
+                [5.782943, -2.7253737],
+                {}
+            ).addTo(map_505101e3cbb1e99751a0dc91d004f91d);
+        
+    
+            var div_icon_0e4da385299747025f2b84060e409e3e = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; font-weight: bold;\"\u003e15\u003c/div\u003e"});
+            marker_702be9c3f08948c64696a2acea09dc03.setIcon(div_icon_0e4da385299747025f2b84060e409e3e);
+        
+    
+        var popup_515db09d39bd456ec9ce58ea72557dfb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_900f3e3b7bbb628c45e30535e6989abc = $(`<div id="html_900f3e3b7bbb628c45e30535e6989abc" style="width: 100.0%; height: 100.0%;">Town 15: Achimfo</div>`)[0];
+                popup_515db09d39bd456ec9ce58ea72557dfb.setContent(html_900f3e3b7bbb628c45e30535e6989abc);
+            
+        
+
+        marker_702be9c3f08948c64696a2acea09dc03.bindPopup(popup_515db09d39bd456ec9ce58ea72557dfb)
+        ;
+
+        
+    
+    
+            var marker_a49e166215c0ec1f4b327d3b3b77248f = L.marker(
+                [5.8679091, -1.9934495],
+                {}
+            ).addTo(map_505101e3cbb1e99751a0dc91d004f91d);
+        
+    
+            var div_icon_6d9636b04c453ccea17ff5a161943031 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; font-weight: bold;\"\u003e16\u003c/div\u003e"});
+            marker_a49e166215c0ec1f4b327d3b3b77248f.setIcon(div_icon_6d9636b04c453ccea17ff5a161943031);
+        
+    
+        var popup_940b798fbca772aca39d4879467872b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f5c416a16ee2a08c2d844ccfb8c4a744 = $(`<div id="html_f5c416a16ee2a08c2d844ccfb8c4a744" style="width: 100.0%; height: 100.0%;">Town 16: Dadieso</div>`)[0];
+                popup_940b798fbca772aca39d4879467872b8.setContent(html_f5c416a16ee2a08c2d844ccfb8c4a744);
+            
+        
+
+        marker_a49e166215c0ec1f4b327d3b3b77248f.bindPopup(popup_940b798fbca772aca39d4879467872b8)
+        ;
+
+        
+    
+    
+            var marker_0c39cde450df375f0ea0b3d7356a4b4c = L.marker(
+                [6.3415722, -2.8235416],
+                {}
+            ).addTo(map_505101e3cbb1e99751a0dc91d004f91d);
+        
+    
+            var div_icon_2656edebca2cec50bad4befe8b33b83e = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; font-weight: bold;\"\u003e17\u003c/div\u003e"});
+            marker_0c39cde450df375f0ea0b3d7356a4b4c.setIcon(div_icon_2656edebca2cec50bad4befe8b33b83e);
+        
+    
+        var popup_07c22f2c0041ff6aa0aeada1b8ee18d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0cae6acf7fe0f721737521e57bd93c8 = $(`<div id="html_f0cae6acf7fe0f721737521e57bd93c8" style="width: 100.0%; height: 100.0%;">Town 17: Juaboso</div>`)[0];
+                popup_07c22f2c0041ff6aa0aeada1b8ee18d4.setContent(html_f0cae6acf7fe0f721737521e57bd93c8);
+            
+        
+
+        marker_0c39cde450df375f0ea0b3d7356a4b4c.bindPopup(popup_07c22f2c0041ff6aa0aeada1b8ee18d4)
+        ;
+
+        
+    
+    
+            var marker_0b475a6e69ae7c3a71794daf69429561 = L.marker(
+                [6.6610179, -3.0942693],
+                {}
+            ).addTo(map_505101e3cbb1e99751a0dc91d004f91d);
+        
+    
+            var div_icon_df320fdefabdb591a18348e017f9ece9 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black; font-weight: bold;\"\u003e18\u003c/div\u003e"});
+            marker_0b475a6e69ae7c3a71794daf69429561.setIcon(div_icon_df320fdefabdb591a18348e017f9ece9);
+        
+    
+        var popup_05b388f8ad820bce01be53e77a3908f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e68dd3795f9e2639cbb7eb7a8e7f3b54 = $(`<div id="html_e68dd3795f9e2639cbb7eb7a8e7f3b54" style="width: 100.0%; height: 100.0%;">Town 18: Debiso Western North</div>`)[0];
+                popup_05b388f8ad820bce01be53e77a3908f1.setContent(html_e68dd3795f9e2639cbb7eb7a8e7f3b54);
+            
+        
+
+        marker_0b475a6e69ae7c3a71794daf69429561.bindPopup(popup_05b388f8ad820bce01be53e77a3908f1)
+        ;
+
+        
+    
+    
+            var poly_line_d899f0ae5f0e4b6cbc2bca5c4559d441 = L.polyline(
+                [[5.018978, -1.6652796], [5.352208174617949, -1.6780302960023483], [4.937, -1.7127928], [4.931695677549553, -1.7883252878051414], [4.887401, -1.7519316], [4.8901537, -1.9664135], [4.865362, -2.242169], [4.967695, -2.322883], [5.288944, -2.772551], [5.310935, -1.992426], [5.4336458, -2.1423648], [5.6337881, -2.2483906], [6.282859, -2.6237662], [5.805803, -2.4324189], [5.782943, -2.7253737], [5.8679091, -1.9934495], [6.3415722, -2.8235416], [6.6610179, -3.0942693]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_505101e3cbb1e99751a0dc91d004f91d);
+        
+</script>
+</html>
